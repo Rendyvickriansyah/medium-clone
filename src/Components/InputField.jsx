@@ -14,7 +14,7 @@ export default function InputField() {
 					name="price"
 					id="price"
 					className="block bg-gray-50 w-full rounded-full py-1.5 pl-9  text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-					placeholder="Search..."
+					placeholder="Search here..."
 				/>
 			</div>
 		</div>
