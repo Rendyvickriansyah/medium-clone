@@ -1,25 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import { categories } from "../data";
 
 const Tabs = () => {
-	const containerRef = useRef(null);
-
-	const scrollRight = () => {
-		const container = containerRef.current;
-		container.scrollBy({
-			top: 0,
-			left: 200, // Sesuaikan nilai pergeseran horizontal sesuai kebutuhan
-			behavior: "smooth",
-		});
-	};
-
 	return (
 		<div className=" bg-white w-full ">
 			<div className="relative overflow-x-scroll flex flex-nowrap no-scrollbar border-b ">
-				<button
-					className="absolute right-0 bottom-5 px-5 bg-white bg-opacity-95 z-10"
-					onClick={scrollRight}
-				>
+				<button className="absolute right-0 bottom-5 px-5 bg-white bg-opacity-95 z-10">
 					<i className="ri-arrow-right-s-line ri-xl"></i>
 				</button>
 				<button>
